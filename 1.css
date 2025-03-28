@@ -1,0 +1,96 @@
+.a {
+    text-align: center;/*文字居中对齐*/
+    padding: 20px;
+    box-sizing: border-box;
+    color: rgb(247, 247, 247);
+}
+.name input{
+   width: 200px;
+   height: 50px;
+   border-radius: 10px ;
+   background-color:rgba(114, 114, 155, 0.6);
+   border: 0;/*去掉边框*/
+   font-size: 18px;
+   color: antiquewhite;
+}
+input:hover{
+    transform: scale(0.9);
+}
+.jieshao{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 0;
+}
+.jieshao h2{
+    text-align: center;
+}
+.gongfa{
+   margin: 0;
+}
+body{
+    background-image: url(./1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: auto;
+}
+.option{
+    font-size: 18px;
+}
+.option select{
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(90deg,rgba(201, 108, 247, 0.35),rgba(18, 18, 234, 0.5));/*渐变背景*/
+    color: rgb(45, 155, 250);
+}
+.lianxi{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.lianxi textarea{
+    width: 500px;
+    height: 200px;
+    background-color: rgba(0, 0,0, 0.8);
+    border-radius: 10px;
+    font-size: 20px;
+    color: aliceblue;
+}
+.lianxi textarea:hover{
+    transform: scale(1.05);/*鼠标悬停后文本框发达1.05倍*/
+}
+.add{
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.add button{
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    background: none;
+    border: 0;
+    color: #f5ecec;
+    overflow: hidden;
+}
+ 
+.add button:hover{
+    border: 0;
+    transform: scale(1.1);
+}
+.a button::after,
+button::before{
+    content: "";
+    display: block;/*设置为块元素，独占一行*/
+    width: 0%;
+    height: 5px;
+    background-color: rgba(97, 36, 240, 0.8);
+    transition: 0.4s;
+}
+.a button::before{
+    margin-left: auto;/*上伪元素左侧随宽度自适应*/
+}
+.a button:hover::after,button:hover::before{
+    width: 100%;
+}
+.music{
+    background-color: rgba(0,0,0, 0.8);
+}

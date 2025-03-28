@@ -1,0 +1,105 @@
+*{
+    margin:0;/*将元素的外边距设置为零*/
+    padding: 15px;/*元素内容与其边框之间的空间*/
+    box-sizing: border-box;/*用于控制元素的盒模型行为*/
+   }
+  div{/*去掉div之间的间隔*/
+     margin: 0;/* 会移除元素外部的空白*/
+     padding: 0%;/*会移除元素内部的空白，确保内容与边框直接接触*/
+  }
+   body{
+      background-image:url(./1.jpg);
+      background-repeat: no-repeat;/*不重复*/
+      overflow: hidden;/*溢出隐藏*/
+      background-size:cover ;/*界面覆盖*/
+      height: 95vh;/*设置液面高度为视口高度*/
+   }
+   .box{
+      width: 900px;
+      height: 600px;
+      display: flex;/*给盒子来个flex布局*/
+      background-color: rgba(69, 38, 59, 0.5);/*面板颜色，透明度设置*/
+      margin: 60px auto;/*上下边框距60px，左右自动居中*/
+      border-radius: 25px;/*来个圆角*/
+      border: 1px solid rgba(255, 255,255, 0.8);/*加个边框*/
+      box-shadow: 0 0 17px #333;/*来个阴影*/
+   }
+   
+   
+   .title-box h1{
+     font-size: 50px;
+      margin:0;/*去掉默认外边距*/
+      line-height: 3;/*调整行高*/
+      margin-bottom: 0;/*控制一个元素与其下方相邻元素之间的间距*/
+      letter-spacing: 150px;/*行间字距*/
+      background: linear-gradient(90deg,rgb(255, 255, 255),rgb(18, 18, 255));/*渐变背景*/
+      -webkit-background-clip: text;/*背景裁剪为文本*/
+      -webkit-text-fill-color: transparent;/*文本填充为透明*/
+      margin-left: 300px;
+   }
+   .input-box{
+     color: rgb(156, 202, 243);
+      font-size: 20px;
+      display: flex;
+      margin-left: 200px;
+      position: relative;
+   }
+   input{
+      height: 40px;
+      margin-bottom: 30px;
+      font-size: 20px;
+      text-indent:2px;/*间隙*/
+      border: 2px solid #89c2ee;/*边框*/
+      background-color: rgba(97, 26, 78, 0.5);
+      border-radius: 4px;
+     
+   }
+   input:hover{
+     transform: scale(1.1);/*鼠标悬停后scale函数和transform使输入框等比例放大*/
+   }
+   
+  .login-form{/*将账号密码登录按钮设为居中*/
+     text-align: center;
+  }
+  button{
+     color:rgb(167, 167, 218);
+     width: 200px;
+     background:none;
+     font-size: 35px;
+     margin-left: 50px;
+     letter-spacing: 10px;
+     border: 0;/*取消边框*/
+  }
+  button:hover{
+     transform: scale(1.1);
+  }
+  button:hover::after,
+  button:hover::before{
+     width: 100%;/*鼠标悬浮时宽度为100%*/
+  }
+  button::after,button::before{/*用befor和after伪元素设置两个边框*/
+     content: "";/*内容为空*/
+     display: block;/*设置为块元素，独占一行*/
+     width: 0%;/*设置初始宽度为0*/
+     height: 3px;
+     background: rgb(209, 56, 194);/*设置背景色*/
+     transition: 0.4s;
+  }
+  button::before{
+     margin-left: auto;/*左侧随宽度自适应*/
+  }
+  .logoContainer{
+     margin-left: 160px;
+     overflow: hidden;/*确保圆角有效*/
+  }
+  .logoContainer img{
+    margin-bottom: 30px;
+  }
+  .logo {
+    border-radius: 20%;
+    transition: transform 0.7s;/*添加过渡效果*/
+  }
+  .logo:hover{
+     transform: rotate(360deg);/*鼠标停滞时旋转360度*/
+     border-radius: 50%;/*鼠标悬停时保持圆形*/
+  }
